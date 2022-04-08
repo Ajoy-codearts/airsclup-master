@@ -1,0 +1,100 @@
+.benifit{
+    background-image: url(../../images/b-bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 11px 0 68px 0;
+    .benifit-wraper{
+        p{
+            text-align: center;
+            line-height: 32px;
+        }
+        .custom-card-wraper{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-gap: 21px;
+            padding: 40px 0;
+            .custom-card{
+                height: 290px;
+                text-align: center;
+                padding: 0 12px;
+                border: none;
+                box-shadow: 0px 0px 12px -1px; background-color: #fff;
+                position: relative;
+                &:before{
+                    position: absolute;
+                    content: '';
+                    top: 0;
+                    width: 0;
+                    height: 0;
+                    border-top: 31px solid var(--primary-color);
+                    border-left: 34px solid transparent;
+                    right: 0;
+                }
+                img{
+                    padding-top: 40px;
+                }
+                h3{
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding: 30px 0;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1650px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                .custom-card{
+                    img{
+                        padding-top: 25px;
+                    }
+                    h3{
+                        padding: 4px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1024px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                grid-template-columns: repeat(3,1fr);
+                .custom-card{
+                    img{
+                        padding-top: 40px;
+                    }
+                    h3{
+                        padding: 30px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:767px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .benifit{
+        .benifit-wraper{
+            .custom-card-wraper{
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    }
+}
